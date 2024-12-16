@@ -1,0 +1,191 @@
+@font-face {
+    font-family: fontname;
+    src: url(./font/飞波正点体.otf);
+    
+}
+@font-face {
+    font-family: fontname2;
+    src: url(./font/三极泼墨体.ttf);
+}
+h3{
+    font-family: fontname;
+    font-size: 100px;
+    color: white;
+}
+h2{
+    font-family: fontname2;
+    font-size: 50px;
+}
+/* 导航栏 */
+@media only screen and (min-width: 992px) {
+    .navbar {
+      padding: 0;
+    }
+    
+    .navbar .navbar-nav .nav-link {
+      padding: 1em 0;
+    }
+    .navbar .navbar-nav .nav-item {
+      margin: 0 1em;
+    }
+  }
+.navbar .navbar-nav .nav-link{
+    font-size: 2em;
+    padding: 0 .6em;
+    border-right: 2px solid black;
+}
+.navbar .navbar-nav .nav-item{
+    position: relative;
+}
+.navbar .navbar-nav .nav-item::after{
+    position:absolute;
+    
+    left: 0;
+    right: 0;
+    content: '';
+    background-color: black;
+    width: 0%;
+    height: 4px;
+    transition: all .5s;
+}
+.navbar .navbar-nav .nav-item:hover::after{
+    width: 100%;
+}
+/* VARIABLES */
+:root {
+    --c-dark: #212529;
+    --c-brand: lightseagreen;
+    --c-brand-light: lightseagreen;
+    --c-brand-rgb: 78, 87, 212;
+    --c-body: #727272;
+    --font-base: "ClashDisplay", sans-serif;
+    --box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.08);
+    --transition: all 0.5s ease;
+}
+
+.section-padding {
+    padding-top: 100px;
+    padding-bottom: 0px;
+}
+/* 页脚 */
+footer {
+    padding-top: 100px;
+}
+
+.footer-top {
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .line {
+    width: 40px;
+    height: 4px;
+    background-color: var(--c-brand);
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+/* 轮播图 */
+/* .social-icons a {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 100px;
+}
+
+.social-icons a:hover {
+    background-color: var(--c-brand);
+    color: white;
+}
+
+ .carousel-item {
+    height: 32rem;
+    
+    background-position: center;
+    background-size: cover;
+}
+
+ .container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 50px;
+}  */
+
+.overlay-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-position: center;
+    background-size: cover;
+    /*透明度 */
+    opacity: 0.8;
+}
+
+/* 卡片 */
+/* @media screen and (min-width:577px) {
+    .cards-wrapper {
+        display: flex;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .card:not(:first-child) {
+        display: none;
+    }
+}
+
+.card {
+    margin: 0 .5em;
+    width: calc(100%/3);
+    border: none;
+    border-radius: 0;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+} */
+
+/* 轮播图按钮 */
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: #e1e1e1;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-control-prev span,
+.carousel-control-next span {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.image-wrapper {
+    height: 22vw;
+    margin: 0 auto;
+
+}
+
+.image-wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+}
