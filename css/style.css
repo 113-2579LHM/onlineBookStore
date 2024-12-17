@@ -1,15 +1,16 @@
+/* 字体 */
 @font-face {
     font-family: fontname;
-    src: url(./font/飞波正点体.otf);
+    src: url(/font/飞波正点体.otf);
     
 }
 @font-face {
     font-family: fontname2;
-    src: url(./font/三极泼墨体.ttf);
+    src: url(/font/三极泼墨体.ttf);
 }
 h3{
     font-family: fontname;
-    font-size: 100px;
+    font-size: 80px;
     color: white;
 }
 h2{
@@ -99,35 +100,6 @@ footer .line {
     margin-bottom: 24px;
 }
 /* 轮播图 */
-/* .social-icons a {
-    width: 40px;
-    height: 40px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 100px;
-}
-
-.social-icons a:hover {
-    background-color: var(--c-brand);
-    color: white;
-}
-
- .carousel-item {
-    height: 32rem;
-    
-    background-position: center;
-    background-size: cover;
-}
-
- .container {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding-bottom: 50px;
-}  */
 
 .overlay-image {
     position: absolute;
@@ -188,4 +160,26 @@ footer .line {
 .image-wrapper img {
     max-width: 100%;
     max-height: 100%;
+}
+.card .icon {
+    font-size: 3rem;
+    color: lightseagreen;
+}
+
+.card-text {
+    color: gray;
+}
+
+.card {
+    transition: all 0.5s;
+}
+
+.card:hover {
+    background-color: lightseagreen;
+    color: #fff;
+}
+
+.card:hover .icon,
+.card:hover .card-text {
+    color: #fff;
 }
