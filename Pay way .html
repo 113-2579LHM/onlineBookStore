@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <script src="./bootstrap/js/jquery-3.7.1.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <style>
+      .breadcrumb-item + .breadcrumb-item::before {
+        content: ">>";
+      }
+
+      #ShopingCartBottom {
+        width: 100%;
+        margin-top: 15px;
+        background-color: grey;
+        padding: 12px 0px;
+        height: 75px;
+      }
+      #ShopingCartBottom1 {
+        background-color: aliceblue;
+        height: 50px;
+      }
+      #goumai {
+        background-color: rgb(255, 198, 85);
+        height: 50px;
+        width: 100%;
+      }
+      .btn-custom-color {
+        background-color: #ff6347;
+        border-color: #ff4500;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+      <a href="#" class="navbar-brand">
+        <img
+          src="99d1fc84e81bed24e576aa985ce2f363.png"
+          alt="在线书店"
+          style="width: 80px"
+        />
+      </a>
+      <ul class="navbar-nav nav-pills" style="padding-left: 5%">
+        <li class="nav-item">
+          <h4
+            href="home copy.html"
+            class="nav-link active"
+            data-bs-toggle="pill"
+          >
+            主页
+          </h4>
+        </li>
+        <li class="nav-item">
+          <h4 href="1.html" class="nav-link" data-bs-toggle="pill">分类</h4>
+        </li>
+        <li class="nav-item">
+          <h4 href="home.html" class="nav-link" data-bs-toggle="pill">书店</h4>
+        </li>
+        <li class="nav-item">
+          <h4 href="1.html" class="nav-link" data-bs-toggle="pill">我的书架</h4>
+        </li>
+      </ul>
+
+      <form class="form-inline" style="padding-left: 20%">
+        <input class="form-control mr-2" type="text" placeholder="" />
+        <button class="btn btn-primary" type="submit">搜索</button>
+      </form>
+
+      <a href="#" class="navbar-brand">
+        <img
+          src="./account_profile_user_avatar_icon_219236.png"
+          alt="个人中心"
+          style="width: 250px; padding-left: 80%"
+        />
+      </a>
+      <a href="#" class="navbar-brand">
+        <img src="shoppingcart_77968.png" alt="购物车" style="width:
+        80px;padding-left: 60%;"">
+      </a>
+    </nav>
+
+    <br /><br />
+    <br />
+    <hr />
+    <br />
+    <div class="container">
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <img
+              src="shoppingcart_77968.png"
+              alt=""
+              style="width: 20px; height: 20px"
+            />
+            <a
+              style="color: rgb(3, 192, 3); border: 0cm; padding: 0%"
+              href="Shopping cart.html"
+              class="btn"
+              ><b>我的购物车</b></a
+            >
+          </li>
+          <li class="breadcrumb-item">
+            <img
+              src="clipboard_paper_file_correct_done_list_document_icon_219488.png"
+              alt=""
+              style="width: 20px; height: 20px"
+            />
+            <b style="color: rgb(3, 192, 3)">核对订单信息</b>
+          </li>
+          <li class="breadcrumb-item">
+            <img
+              src="Tick_Mark_icon-icons.com_69146.png"
+              alt=""
+              style="width: 20px; height: 20px"
+            />
+            <a
+              style="border: 0cm; padding: 0%"
+              href="Pay interface .html"
+              class="btn"
+              ><b>成功支付</b></a
+            >
+          </li>
+        </ol>
+      </nav>
+      <table
+        class="table"
+        style="background-color: aliceblue; border: 1px solid black"
+      >
+        <tr>
+          <th>
+            <img
+              src="Tick_Mark_icon-icons.com_69146.png"
+              alt=""
+              style="width: 92px; height: 92px"
+            />
+          </th>
+          <th>XXX</th>
+          <th>16.5(元)</th>
+          <th><input type="number" style="width: 86px" /></th>
+          <th style="color: rgb(255, 0, 51)"><h5></h5></th>
+        </tr>
+        <tr>
+          <th>
+            <img
+              src="Tick_Mark_icon-icons.com_69146.png"
+              alt=""
+              style="width: 92px; height: 92px"
+            />
+          </th>
+          <th>XXX</th>
+          <th>16.5(元)</th>
+          <th><input type="number" style="width: 86px" /></th>
+          <th style="color: rgb(255, 0, 51)"><h5></h5></th>
+        </tr>
+        <tr>
+          <th>
+            <img
+              src="Tick_Mark_icon-icons.com_69146.png"
+              alt=""
+              style="width: 92px; height: 92px"
+            />
+          </th>
+          <th>XXX</th>
+          <th>16.5(元)</th>
+          <th><input type="number" style="width: 86px" /></th>
+          <th style="color: rgb(255, 0, 51)"><h5></h5></th>
+        </tr>
+      </table>
+      <div>
+        <div id="ShopingCartBottom">
+          <div id="ShopingCartBottom1">
+            <div class="row">
+              <div class="col-sm-6">
+                <h5>
+                  共有 <a style="color: rgb(255, 0, 51)">0</a> 件商品 商品总金额
+                  <a style="color: rgb(255, 0, 51)">￥0</a>
+                </h5>
+              </div>
+              <div class="col-sm-3">
+               
+              </div>
+              <div class="col-sm-3" style="margin-right: 0%">
+                <a
+                  id="goumai"
+                  href="Pay interface .html"
+                  class="btn"
+                  type="button"
+                  ><h3>去支付</h3></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
