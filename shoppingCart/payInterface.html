@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
   <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/css/footer.css">
+  <link rel="stylesheet" href="/css/navigation.css">
+
   <script src="/bootstrap/js/jquery-3.7.1.min.js"></script>
   <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="/bootstrap/js/bootstrap.min.js"></script>
@@ -41,103 +44,183 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-    <a href="#" class="navbar-brand">
-      <img src="img/99d1fc84e81bed24e576aa985ce2f363.png" alt="在线书店" style="width: 80px;">
-    </a>
-    <ul class="navbar-nav nav-pills" style="padding-left:5%;">
-      <li class="nav-item">
-        <h4 href="home copy.html" class="nav-link active" data-bs-toggle="pill">主页</h4>
-      </li>
-      <li class="nav-item">
-        <h4 href="1.html" class="nav-link" data-bs-toggle="pill">分类</h4>
-      </li>
-      <li class="nav-item">
-        <h4 href="home.html" class="nav-link" data-bs-toggle="pill">书店</h4>
-      </li>
-      <li class="nav-item">
-        <h4 href="1.html" class="nav-link" data-bs-toggle="pill">我的书架</h4>
-      </li>
-    </ul>
+  <div class="container">
+    <div class="row">
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top"
+        style="background: linear-gradient(to right, lightseagreen, #06c3e9);">
 
-    <form class="form-inline" style="padding-left: 20%; ">
-      <input class="form-control mr-2" type="text" placeholder="">
-      <button class="btn btn-primary" type="submit">搜索</button>
-    </form>
+        <a href="#" class="navbar-brand">
+          <img src="/navigation/image/99d1fc84e81bed24e576aa985ce2f363.png" alt="在线书店" style="width: 80px;">
+        </a>
 
-    <a href="#" class="navbar-brand">
-      <img src="img/account_profile_user_avatar_icon_219236.png" alt="个人中心" style="width: 250px; padding-left: 80%;">
-    </a>
-    <a href="#" class="navbar-brand">
-      <img src="img/shoppingcart_77968.png" alt="购物车" style="width: 80px;padding-left: 60%;"">
-      </a>
-  </nav>
-</div>
-<br><br>
-    <br />
-    <hr />
-    <br />
-    <div class=" container">
-      <nav>
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">
-            <img src="img/shoppingcart_77968.png" alt="" style="width: 20px; height: 20px" />
-            <a style="color: rgb(3, 192, 3); border: 0cm; padding: 0%" href="shoppingCart.html"
-              class="btn"><b>我的购物车</b></a>
-          </li>
-          <li class="breadcrumb-item">
-            <img src="img/clipboard_paper_file_correct_done_list_document_icon_219488.png" alt=""
-              style="width: 20px; height: 20px" />
-            <a style="color: rgb(3, 192, 3); border: 0cm; padding: 0%" href="payWay.html" class="btn"><b>核对订单信息</b></a>
-          </li>
-          <li class="breadcrumb-item">
-            <img src="img/Tick_Mark_icon-icons.com_69146.png" alt="" style="width: 20px; height: 20px" />
-            <b style="color: rgb(3, 192, 3)">成功支付</b>
-          </li>
-        </ol>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <!-- <ul class="navbar-nav ms-auto"> -->
+          <ul class="navbar-nav me-auto justify-content-center">
+            <li class="nav-item">
+              <a href="home copy.html" class="nav-link active" style="color: white;">
+                <h6>主页</h6>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="1.html" class="nav-link" style="color: white;">
+                <h6>分类</h6>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="home.html" class="nav-link" style="color: white;">
+                <h6>书店</h6>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="1.html" class="nav-link" style="color: white;">
+                <h6>我的书架</h6>
+              </a>
+            </li>
+          </ul>
+
+          <!-- </div>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar"> -->
+          <a href="#" class="navbar-brand">
+            <img src="/navigation/image/account_profile_user_avatar_icon_219236.png" alt="个人中心" style="width: 50px;">
+
+            <img src="/navigation/image/shoppingcart_77968.png" alt="购物车" style="width: 40px;">
+          </a>
+        </div>
+
+        <form class="d-flex" style="height: 40px;">
+          <input class="form-control me-2" type="text" placeholder="" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit" style="width: 80px;">搜索</button>
+        </form>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+
       </nav>
-      <div class="row">
-        <div class="col-sm-6">
-          <img src="img/支付宝.webp" alt="" style="margin-left: 20%; height: 150px; width: 350px" />
-        </div>
-        <div class="col-sm-6">
-          <img src="img/微信支付图标.jpeg" alt="" style="margin-left: 20%; height: 150px; width: 350px" />
-        </div>
+    </div>
+  </div>
+
+  <div style="height: 95px;"></div>
+
+  </div>
+  <div class=" container">
+    <nav>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <img src="img/shoppingcart_77968.png" alt="" style="width: 20px; height: 20px" />
+          <a style="color: rgb(3, 192, 3); border: 0cm; padding: 0%" href="shoppingCart.html"
+            class="btn"><b>我的购物车</b></a>
+        </li>
+        <li class="breadcrumb-item">
+          <img src="img/clipboard_paper_file_correct_done_list_document_icon_219488.png" alt=""
+            style="width: 20px; height: 20px" />
+          <a style="color: rgb(3, 192, 3); border: 0cm; padding: 0%" href="payWay.html" class="btn"><b>核对订单信息</b></a>
+        </li>
+        <li class="breadcrumb-item">
+          <img src="img/Tick_Mark_icon-icons.com_69146.png" alt="" style="width: 20px; height: 20px" />
+          <b style="color: rgb(3, 192, 3)">成功支付</b>
+        </li>
+      </ol>
+    </nav>
+    <div class="row">
+      <div class="col-sm-6">
+        <img src="img/支付宝.webp" alt="" style="margin-left: 20%; height: 150px; width: 350px" />
       </div>
-      <div class="row">
-        <div class="col-sm-6">
-          <img src="img/image.png" alt="" style="
+      <div class="col-sm-6">
+        <img src="img/微信支付图标.jpeg" alt="" style="margin-left: 20%; height: 150px; width: 350px" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <img src="img/image.png" alt="" style="
               margin-left: 20%;
               height: 350px;
               width: 350px;
               border: 1px solid black;
             " />
-        </div>
-        <div class="col-sm-6">
-          <img src="img/image.png" alt="" style="
+      </div>
+      <div class="col-sm-6">
+        <img src="img/image.png" alt="" style="
               margin-left: 20%;
               height: 350px;
               width: 350px;
               border: 1px solid black;
             " />
-        </div>
       </div>
-      <div>
-        <div id="ShopingCartBottom">
-          <div id="ShopingCartBottom1">
-            <div class="row">
-              <div class="col-sm-12">
-                <h5>
-                  支付 PAY 支付 PAY 支付 PAY 支付 PAY 支付 PAY 支付 PAY 支付 PAY
-                  支付 PAY 支付 PAY 支付 PAY 支付 PAY 支付 PAY 支付 PAY 支付 PAY
-                  支付
-                </h5>
-              </div>
+    </div>
+    <div>
+      <div id="ShopingCartBottom">
+        <div id="ShopingCartBottom1">
+          <div class="row">
+            <div class="col-sm-12">
+              <h5>
+                支付 PAY 支付 PAY 支付 PAY 支付 PAY 支付 PAY 支付 PAY 支付 PAY
+                支付 PAY 支付 PAY 支付 PAY 支付 PAY 支付 PAY 支付 PAY 支付 PAY
+                支付
+              </h5>
             </div>
           </div>
         </div>
       </div>
-      </div>
+    </div>
+  </div>
+
+  <div style="height: 50px;"></div>
+<footer class="bg-dark">
+    <div class="container">
+        <div class="footer-top">
+
+            <div class="row gy-5">
+                <div class="col-lg-3 col-sm-6">
+                    <a href="#"><img src="/navigation/image/99d1fc84e81bed24e576aa985ce2f363.png" alt=""
+                            style="width: 100px;"></a>
+                    <p style="color: white;">在线书店</p>
+
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <h5 class="mb-0 text-white">SUPPORTS
+                        <div class="line"></div>
+                        <ul style="color: white;">
+                            <li>BOOTSRSPT 5</li>
+                            <li>HTML</li>
+                            <li>git</li>
+                        </ul>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <h5 class="mb-0 text-white">ABOUT US
+                        <div class="line"></div>
+                        <ul style="color: white;">
+                            <li>Ricciardo</li>
+                                <li>Duke</li>
+                                <li>Bart</li>
+                                <li>Brody</li>
+                                <li>Jack</li>
+                                <li>Zack</li>
+                        </ul>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <h5 class="mb-0 text-white">CONTACT
+                        <div class="line"></div>
+                        <ul style="color: white;">
+                            <li>GUET 北海</li>
+                            <li>10086666</li>
+                            <li>www.example.com</li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="row g-4 justify-content-between">
+                <div class="col-auto">
+                    <p class="mb-0" style="color: white;">© 汤臣六品豪华607</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
 </body>
 
 </html>

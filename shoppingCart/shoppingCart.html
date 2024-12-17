@@ -1,388 +1,391 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />
-    <script src="/bootstrap/js/jquery-3.7.1.min.js"></script>
-    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="/bootstrap/js/bootstrap.min.js"></script>
-    <style>
-      .breadcrumb-item + .breadcrumb-item::before {
-        content: ">>";
-      }
-      #ShopingCartBottom {
-        width: 100%;
-        margin-top: 15px;
-        background-color: grey;
-        padding: 12px 0px;
-        height: 75px;
-      }
-      #ShopingCartBottom1 {
-        background-color: aliceblue;
-        height: 50px;
-      }
-      #goumai {
-        background-color: rgb(255, 198, 85);
-        height: 50px;
-        width: 100%;
-      }
 
-      .btn-custom-color {
-        background-color: #ff6347;
-        border-color: #ff4500;
-      }
-      .row-hover:hover {
-        background-color: rgb(255, 231, 182); /* 鼠标悬浮时的背景颜色 */
-      }
-    </style>
-    <!-- <span class="badge rounded-pill bg-dark"> -->
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/css/footer.css">
+  <link rel="stylesheet" href="/css/navigation.css">
 
-  <body>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-      <a href="#" class="navbar-brand">
-        <img
-          src="99d1fc84e81bed24e576aa985ce2f363.png"
-          alt="在线书店"
-          style="width: 80px"
-        />
-      </a>
-      <ul class="navbar-nav nav-pills" style="padding-left: 5%">
-        <li class="nav-item">
-          <h4
-            href="home copy.html"
-            class="nav-link active"
-            data-bs-toggle="pill"
-          >
-            主页
-          </h4>
-        </li>
-        <li class="nav-item">
-          <h4 href="1.html" class="nav-link" data-bs-toggle="pill">分类</h4>
-        </li>
-        <li class="nav-item">
-          <h4 href="home.html" class="nav-link" data-bs-toggle="pill">书店</h4>
-        </li>
-        <li class="nav-item">
-          <h4 href="1.html" class="nav-link" data-bs-toggle="pill">我的书架</h4>
-        </li>
-      </ul>
+  <script src="/bootstrap/js/jquery-3.7.1.min.js"></script>
+  <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/bootstrap/js/bootstrap.min.js"></script>
+  <style>
+    .breadcrumb-item+.breadcrumb-item::before {
+      content: ">>";
+    }
 
-      <form class="form-inline" style="padding-left: 20%">
-        <input class="form-control mr-2" type="text" placeholder="" />
-        <button class="btn btn-primary" type="submit">搜索</button>
-      </form>
+    #ShopingCartBottom {
+      width: 100%;
+      margin-top: 15px;
+      background-color: grey;
+      padding: 12px 0px;
+      height: 75px;
+    }
 
-      <a href="#" class="navbar-brand">
-        <img
-          src="/account_profile_user_avatar_icon_219236.png"
-          alt="个人中心"
-          style="width: 250px; padding-left: 80%"
-        />
-      </a>
-      <a href="#" class="navbar-brand">
-        <img src="shoppingcart_77968.png" alt="购物车" style="width:
-        80px;padding-left: 60%;"">
-      </a>
-    </nav>
-    <br /><br /><br />
-    <hr />
-    <br />
+    #ShopingCartBottom1 {
+      background-color: aliceblue;
+      height: 50px;
+    }
 
-    <div class="container">
-      <nav>
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">
-            <img
-              src="shoppingcart_77968.png"
-              alt=""
-              style="width: 20px; height: 20px"
-            />
-            <b style="color: rgb(3, 192, 3)">我的购物车</b>
-          </li>
-          <li class="breadcrumb-item">
-            <img
-              src="clipboard_paper_file_correct_done_list_document_icon_219488.png"
-              alt=""
-              style="width: 20px; height: 20px"
-            />
-            <a style="border: 0cm; padding: 0%" href="payWay.html" class="btn"
-              ><b>核对订单信息</b></a
-            >
-          </li>
-          <li class="breadcrumb-item">
-            <img
-              src="Tick_Mark_icon-icons.com_69146.png"
-              alt=""
-              style="width: 20px; height: 20px"
-            />
-            <a
-              style="border: 0cm; padding: 0%"
-              href="payInterface.html"
-              class="btn"
-              ><b>成功支付</b></a
-            >
-          </li>
-        </ol>
+    #goumai {
+      background-color: rgb(255, 198, 85);
+      height: 50px;
+      width: 100%;
+    }
+
+    .btn-custom-color {
+      background-color: #ff6347;
+      border-color: #ff4500;
+    }
+
+    .row-hover:hover {
+      background-color: rgb(255, 231, 182);
+      /* 鼠标悬浮时的背景颜色 */
+    }
+  </style>
+  <!-- <span class="badge rounded-pill bg-dark"> -->
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top"
+        style="background: linear-gradient(to right, lightseagreen, #06c3e9);">
+
+        <a href="#" class="navbar-brand">
+          <img src="/navigation/image/99d1fc84e81bed24e576aa985ce2f363.png" alt="在线书店" style="width: 80px;">
+        </a>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <!-- <ul class="navbar-nav ms-auto"> -->
+          <ul class="navbar-nav me-auto justify-content-center">
+            <li class="nav-item">
+              <a href="home copy.html" class="nav-link active" style="color: white;">
+                <h6>主页</h6>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="1.html" class="nav-link" style="color: white;">
+                <h6>分类</h6>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="home.html" class="nav-link" style="color: white;">
+                <h6>书店</h6>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="1.html" class="nav-link" style="color: white;">
+                <h6>我的书架</h6>
+              </a>
+            </li>
+          </ul>
+
+          <!-- </div>
+              <div class="collapse navbar-collapse" id="collapsibleNavbar"> -->
+          <a href="#" class="navbar-brand">
+            <img src="/navigation/image/account_profile_user_avatar_icon_219236.png" alt="个人中心" style="width: 50px;">
+
+            <img src="/navigation/image/shoppingcart_77968.png" alt="购物车" style="width: 40px;">
+          </a>
+        </div>
+
+        <form class="d-flex" style="height: 40px;">
+          <input class="form-control me-2" type="text" placeholder="" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit" style="width: 80px;">搜索</button>
+        </form>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+
       </nav>
-      <br />
-      <!-- </span> -->
+    </div>
+  </div>
 
-      <h3 style="padding: 30px; background-color: rgb(255, 198, 85)">
-        <b>购物车(<a style="color: red">0</a>)</b>
-      </h3>
-      <hr />
+  <div style="height: 95px;"></div>
 
-      <form action="">
-        <div id="zhengti" style="border: 1px solid black">
-          <div
-            class="row"
-            style="
+  <div class="container">
+    <nav>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <img src="img/shoppingcart_77968.png" alt="" style="width: 20px; height: 20px" />
+          <b style="color: rgb(3, 192, 3)">我的购物车</b>
+        </li>
+        <li class="breadcrumb-item">
+          <img src="img/clipboard_paper_file_correct_done_list_document_icon_219488.png" alt=""
+            style="width: 20px; height: 20px" />
+          <a style="border: 0cm; padding: 0%" href="payWay.html" class="btn"><b>核对订单信息</b></a>
+        </li>
+        <li class="breadcrumb-item">
+          <img src="img/Tick_Mark_icon-icons.com_69146.png" alt="" style="width: 20px; height: 20px" />
+          <a style="border: 0cm; padding: 0%" href="payInterface.html" class="btn"><b>成功支付</b></a>
+        </li>
+      </ol>
+    </nav>
+    <br />
+    <!-- </span> -->
+
+    <h3 style="padding: 30px; background-color: rgb(255, 198, 85)">
+      <b>购物车(<a style="color: red">0</a>)</b>
+    </h3>
+    <hr />
+
+    <form action="">
+      <div id="zhengti" style="border: 1px solid black">
+        <div class="row" style="
               background-color: rgb(253, 209, 119);
               width: 100%;
               margin-left: 0.5px;
-            "
-          >
-            <div class="col"></div>
-            <div class="col">图书样式</div>
-            <div class="col">图书名称</div>
-            <div class="col">定价(元)</div>
-            <div class="col">数量(本)</div>
-            <div class="col">总计</div>
-            <br /><br />
-          </div>
+            ">
+          <div class="col"></div>
+          <div class="col">图书样式</div>
+          <div class="col">图书名称</div>
+          <div class="col">定价(元)</div>
+          <div class="col">数量(本)</div>
+          <div class="col">总计</div>
+          <br /><br />
+        </div>
 
-          <div
-            class="row row-hover"
-            style="width: 100%; margin-left: 0.5px; padding-top: 20px"
-          >
-            <div class="col">
-              <input
-                type="checkbox"
-                id="change-color-btn"
-                class="form-check-input item-checkbox"
-              />
-            </div>
-            <div class="col">
-              <img
-                src="Tick_Mark_icon-icons.com_69146.png"
-                alt=""
-                style="width: 92px; height: 92px"
-              />
-            </div>
-            <div class="col">XXX</div>
-            <div class="col">
-              16.5(元)
-              <input type="number" id="jiage1" value="16.5" hidden />
-            </div>
-            <div class="col">
-              <input
-                type="number"
-                id="shuliang1"
-                style="width: 86px"
-                onclick="processNumbers1();processAllNumbers1()"
-              />
-            </div>
-            <div class="col">
-              <div id="result" style="width: 50px" class="col-mt-2"></div>
-            </div>
+        <div class="row row-hover" style="width: 100%; margin-left: 0.5px; padding-top: 20px">
+          <div class="col">
+            <input type="checkbox" id="change-color-btn" class="form-check-input item-checkbox" />
           </div>
-
-          <div
-            class="row row-hover"
-            style="width: 100%; margin-left: 0.5px; padding-top: 20px"
-          >
-            <div class="col">
-              <input
-                class="form-check-input item-checkbox"
-                type="checkbox"
-                onclick="xuanze();"
-              />
-            </div>
-            <div class="col">
-              <img
-                src="Tick_Mark_icon-icons.com_69146.png"
-                alt=""
-                style="width: 92px; height: 92px"
-              />
-            </div>
-            <div class="col">XXX</div>
-            <div class="col">
-              16.5(元)
-              <input type="number" id="jiage2" value="16.5" hidden />
-            </div>
-            <div class="col">
-              <input
-                type="number"
-                id="shuliang2"
-                style="width: 86px"
-                onclick="processNumbers2();processAllNumbers1()"
-              />
-            </div>
-            <div class="col">
-              <div id="result2" style="width: 50px" class="mt-2"></div>
-            </div>
+          <div class="col">
+            <img src="img/Tick_Mark_icon-icons.com_69146.png" alt="" style="width: 92px; height: 92px" />
           </div>
-
-          <div
-            class="row row-hover"
-            style="width: 100%; margin-left: 0.5px; padding-top: 20px"
-          >
-            <div class="col">
-              <input class="form-check-input item-checkbox" type="checkbox" />
-            </div>
-            <div class="col">
-              <img
-                src="Tick_Mark_icon-icons.com_69146.png"
-                alt=""
-                style="width: 92px; height: 92px"
-              />
-            </div>
-            <div class="col">XXX</div>
-            <div class="col">
-              16.5(元)
-              <input type="number" id="jiage3" value="16.5" hidden />
-            </div>
-            <div class="col">
-              <input
-                type="number"
-                id="shuliang3"
-                style="width: 86px"
-                onclick="processNumbers3();processAllNumbers1()"
-              />
-            </div>
-            <div class="col">
-              <div id="result3" style="width: 50px" class="mt-2"></div>
-            </div>
+          <div class="col">XXX</div>
+          <div class="col">
+            16.5(元)
+            <input type="number" id="jiage1" value="16.5" hidden />
+          </div>
+          <div class="col">
+            <input type="number" id="shuliang1" style="width: 86px" onclick="processNumbers1();processAllNumbers1()" />
+          </div>
+          <div class="col">
+            <div id="result" style="width: 50px" class="col-mt-2"></div>
           </div>
         </div>
-      </form>
-      <br /><br />
 
-      <div id="ShopingCartBottom">
-        <div id="ShopingCartBottom1">
-          <div class="row">
-            <div class="col-sm-6">
-              <input
-                type="checkbox"
-                class=""
-                id="selectAll"
-                style="margin-left: 10px"
-                onclick="updateCheckboxCount()"
-              />
-              全选
-            </div>
-            <div class="col-sm-3">
-              <h5>
-                已选择
-                <a style="color: red"><span id="selected-count">0</span></a>
-                件商品 商品总金额
-                <span id="allResult" style="color: rgb(255, 0, 51)">￥0</span>
-              </h5>
-            </div>
-            <div class="col-sm-3" style="margin-right: 0%">
-              <a id="goumai" href="payWay.html" class="btn" type="button"
-                ><h3>立即结算</h3></a
-              >
-            </div>
+        <div class="row row-hover" style="width: 100%; margin-left: 0.5px; padding-top: 20px">
+          <div class="col">
+            <input class="form-check-input item-checkbox" type="checkbox" onclick="xuanze();" />
+          </div>
+          <div class="col">
+            <img src="img/Tick_Mark_icon-icons.com_69146.png" alt="" style="width: 92px; height: 92px" />
+          </div>
+          <div class="col">XXX</div>
+          <div class="col">
+            16.5(元)
+            <input type="number" id="jiage2" value="16.5" hidden />
+          </div>
+          <div class="col">
+            <input type="number" id="shuliang2" style="width: 86px" onclick="processNumbers2();processAllNumbers1()" />
+          </div>
+          <div class="col">
+            <div id="result2" style="width: 50px" class="mt-2"></div>
+          </div>
+        </div>
+
+        <div class="row row-hover" style="width: 100%; margin-left: 0.5px; padding-top: 20px">
+          <div class="col">
+            <input class="form-check-input item-checkbox" type="checkbox" />
+          </div>
+          <div class="col">
+            <img src="img/Tick_Mark_icon-icons.com_69146.png" alt="" style="width: 92px; height: 92px" />
+          </div>
+          <div class="col">XXX</div>
+          <div class="col">
+            16.5(元)
+            <input type="number" id="jiage3" value="16.5" hidden />
+          </div>
+          <div class="col">
+            <input type="number" id="shuliang3" style="width: 86px" onclick="processNumbers3();processAllNumbers1()" />
+          </div>
+          <div class="col">
+            <div id="result3" style="width: 50px" class="mt-2"></div>
+          </div>
+        </div>
+      </div>
+    </form>
+    <br /><br />
+
+    <div id="ShopingCartBottom">
+      <div id="ShopingCartBottom1">
+        <div class="row">
+          <div class="col-sm-6">
+            <input type="checkbox" class="" id="selectAll" style="margin-left: 10px" onclick="updateCheckboxCount()" />
+            全选
+          </div>
+          <div class="col-sm-3">
+            <h5>
+              已选择
+              <a style="color: red"><span id="selected-count">0</span></a>
+              件商品 商品总金额
+              <span id="allResult" style="color: rgb(255, 0, 51)">￥0</span>
+            </h5>
+          </div>
+          <div class="col-sm-3" style="margin-right: 0%">
+            <a id="goumai" href="payWay.html" class="btn" type="button">
+              <h3>立即结算</h3>
+            </a>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <script>
-      // 每行总计价格
-      function processNumbers1() {
-        const number1 = parseFloat(document.getElementById("jiage1").value);
-        const number2 = parseFloat(document.getElementById("shuliang1").value);
+  <div style="height: 90px;"></div>
+  <footer class="bg-dark">
+    <div class="container">
+      <div class="footer-top">
 
-        const result = zongji1(number1, number2);
+        <div class="row gy-5">
+          <div class="col-lg-3 col-sm-6">
+            <a href="#"><img src="/navigation/image/99d1fc84e81bed24e576aa985ce2f363.png" alt=""
+                style="width: 100px;"></a>
+            <p style="color: white;">在线书店</p>
 
-        document.getElementById("result").innerHTML = `<p>${result}(元)</p>`;
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <h5 class="mb-0 text-white">SUPPORTS
+              <div class="line"></div>
+              <ul style="color: white;">
+                <li>BOOTSRSPT 5</li>
+                <li>HTML</li>
+                <li>git</li>
+              </ul>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <h5 class="mb-0 text-white">ABOUT US
+              <div class="line"></div>
+              <ul style="color: white;">
+                <li>Ricciardo</li>
+                <li>Duke</li>
+                <li>Bart</li>
+                <li>Brody</li>
+                <li>Jack</li>
+                <li>Zack</li>
+              </ul>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <h5 class="mb-0 text-white">CONTACT
+              <div class="line"></div>
+              <ul style="color: white;">
+                <li>GUET 北海</li>
+                <li>10086666</li>
+                <li>www.example.com</li>
+              </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="row g-4 justify-content-between">
+          <div class="col-auto">
+            <p class="mb-0" style="color: white;">© 汤臣六品豪华607</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // 每行总计价格
+    function processNumbers1() {
+      const number1 = parseFloat(document.getElementById("jiage1").value);
+      const number2 = parseFloat(document.getElementById("shuliang1").value);
+
+      const result = zongji1(number1, number2);
+
+      document.getElementById("result").innerHTML = `<p>${result}(元)</p>`;
+    }
+
+    function processNumbers2() {
+      const number1 = parseFloat(document.getElementById("jiage2").value);
+      const number2 = parseFloat(document.getElementById("shuliang2").value);
+
+      const result = zongji2(number1, number2);
+
+      document.getElementById("result2").innerHTML = `<p>${result}(元)</p>`;
+    }
+
+    function processNumbers3() {
+      const number1 = parseFloat(document.getElementById("jiage3").value);
+      const number2 = parseFloat(document.getElementById("shuliang3").value);
+
+      const result = zongji3(number1, number2);
+
+      document.getElementById("result3").innerHTML = `<p>${result}(元)</p>`;
+    }
+
+    function processAllNumbers1() {
+      const number1 = parseFloat(document.getElementById("result").value);
+      const number2 = parseFloat(document.getElementById("result2").value);
+      const number3 = parseFloat(document.getElementById("result3").value);
+
+      const result = zongjiage(number1, number2, number3);
+
+      document.getElementById("allResult").innerHTML = `<p>${result}(元)</p>`;
+    }
+
+    function zongji1(a1, b1) {
+      let c1 = a1 * b1;
+      return c1;
+    }
+
+    function zongji2(a2, b2) {
+      let c2 = a2 * b2;
+      return c2;
+    }
+
+    function zongji3(a3, b3) {
+      let c3 = a3 * b3;
+      return c3;
+    }
+
+    function zongjiage(c1, c2, c3) {
+      let z1 = c1 + c2 + c3;
+      return z1;
+    }
+
+    // 勾选框个数
+    $(document).ready(function () {
+      function updateCheckboxCount() {
+        const checkboxes = $(".form-check-input");
+        const selectedCount = checkboxes.filter(":checked").length;
+        $("#selected-count").text(selectedCount);
       }
 
-      function processNumbers2() {
-        const number1 = parseFloat(document.getElementById("jiage2").value);
-        const number2 = parseFloat(document.getElementById("shuliang2").value);
+      $(".form-check-input").change(updateCheckboxCount);
 
-        const result = zongji2(number1, number2);
+      updateCheckboxCount();
+    });
 
-        document.getElementById("result2").innerHTML = `<p>${result}(元)</p>`;
-      }
+    $(document).ready(function () {
+      $("#selectAll").on("click", function () {
+        var checkboxes = $(".item-checkbox");
+        checkboxes.prop("checked", $(this).prop("checked"));
+      });
 
-      function processNumbers3() {
-        const number1 = parseFloat(document.getElementById("jiage3").value);
-        const number2 = parseFloat(document.getElementById("shuliang3").value);
-
-        const result = zongji3(number1, number2);
-
-        document.getElementById("result3").innerHTML = `<p>${result}(元)</p>`;
-      }
-
-      function processAllNumbers1() {
-        const number1 = parseFloat(document.getElementById("result").value);
-        const number2 = parseFloat(document.getElementById("result2").value);
-        const number3 = parseFloat(document.getElementById("result3").value);
-
-        const result = zongjiage(number1, number2, number3);
-
-        document.getElementById("allResult").innerHTML = `<p>${result}(元)</p>`;
-      }
-
-      function zongji1(a1, b1) {
-        let c1 = a1 * b1;
-        return c1;
-      }
-
-      function zongji2(a2, b2) {
-        let c2 = a2 * b2;
-        return c2;
-      }
-
-      function zongji3(a3, b3) {
-        let c3 = a3 * b3;
-        return c3;
-      }
-
-      function zongjiage(c1, c2, c3) {
-        let z1 = c1 + c2 + c3;
-        return z1;
-      }
-
-      // 勾选框个数
-      $(document).ready(function () {
-        function updateCheckboxCount() {
-          const checkboxes = $(".form-check-input");
-          const selectedCount = checkboxes.filter(":checked").length;
-          $("#selected-count").text(selectedCount);
+      $(".item-checkbox").on("click", function () {
+        if (!$(this).prop("checked")) {
+          $("#selectAll").prop("checked", false);
         }
 
-        $(".form-check-input").change(updateCheckboxCount);
-
-        updateCheckboxCount();
+        // 如果所有子复选框都被选中，则选中全选复选框
+        if (
+          $(".item-checkbox:checked").length === $(".item-checkbox").length
+        ) {
+          $("#selectAll").prop("checked", true);
+        }
       });
+    });
+  </script>
+</body>
 
-      $(document).ready(function () {
-        $("#selectAll").on("click", function () {
-          var checkboxes = $(".item-checkbox");
-          checkboxes.prop("checked", $(this).prop("checked"));
-        });
-
-        $(".item-checkbox").on("click", function () {
-          if (!$(this).prop("checked")) {
-            $("#selectAll").prop("checked", false);
-          }
-
-          // 如果所有子复选框都被选中，则选中全选复选框
-          if (
-            $(".item-checkbox:checked").length === $(".item-checkbox").length
-          ) {
-            $("#selectAll").prop("checked", true);
-          }
-        });
-      });
-    </script>
-  </body>
 </html>
