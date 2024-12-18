@@ -35,18 +35,12 @@
             text-align: center;
         }
 
-        img {
-            cursor: pointer;
-            /* 改变鼠标指针为手型，提示可点击 */
-            display: block;
-            margin-bottom: 5px;
-        }
-
         a {
             display: block;
             text-decoration: none;
         }
     </style>
+
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             showInterface('interface1');
@@ -200,7 +194,7 @@
 
 <body style="background-color: aliceblue;">
     <!-- 导航栏 -->
-    <div class="container">
+    <div class="container col-12">
         <div class="row">
             <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top"
                 style="background: linear-gradient(to right, lightseagreen, #06c3e9);">
@@ -244,7 +238,8 @@
 
                 <form class="d-flex" style="height: 40px;">
                     <input class="form-control me-2" type="text" placeholder="" aria-label="Search">
-                    <button class="btn btn-outline-light" type="submit" style="width: 80px;">搜索</button>
+                    <button class="btn btn-outline-light" type="submit"
+                        style="width: 80px; margin-right: 10px">搜索</button>
                 </form>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -256,15 +251,15 @@
     </div>
 
     <!-- 用来解决导航栏遮盖元素的问题 -->
-    <div style="height: 74px;"></div>
+    <div style="height: 274px;"></div>
 
     <!-- 头像框 -->
-    <div class="container" style="background-color: white;">
+    <div class="container col-12" style="background-color: white;">
         <div class="row align-items-center">
-            <div class="col-md-2">
+            <div class="col-12 col-md-3">
                 <img src="./img/个人.png" class="img-fluid rounded-circle mx-auto" style="width: 100px; height: 100px;">
             </div>
-            <div class="col-md-10">
+            <div class="col-12 col-md-6">
                 <ul class="list-unstyled">
                     <li><b>用户名：</b><span id="userDisplayname"></span></li>
                     <li><b>性别：</b><span id="userDisplaysex"></span></li>
@@ -275,80 +270,89 @@
             </div>
         </div>
     </div>
-    <!-- 头像框 -->
-    <br>
+
+
     <br>
     <div class="container" style="background-color: white;">
-        <br>
-        <button type="button" class="btn btn-primary" onclick="showInterface('interface1')"
-            style="background-color: lightseagreen;">阅读足迹</button>
-        <button type="button" class="btn btn-primary" onclick="showInterface('interface2')"
-            style="background-color: lightseagreen;">反馈</button>
-        <button type="button" class="btn btn-primary" onclick="showInterface('interface3')"
-            style="background-color: lightseagreen;">设置</button>
-        <!-- 阅读足迹 -->
-        <div id="interface1" class="interface" style="display:none; background-color: aliceblue;">
-            <div class="border p-3 mt-3" style="background-color: white;">
-                <h5 style="text-align: center;">阅读足迹</h5>
-                <div class="container">
-                    <div class="row" style="border: 2px solid black;">
-                        <button id="btn1" onclick="recordClick(this)">Button 1</button>
-                        <button id="btn2" onclick="recordClick(this)">Button 2</button>
-                        <button id="btn3" onclick="recordClick(this)">Button 3</button>
-                        <button id="btn4" onclick="recordClick(this)">Button 4</button>
-                        <button id="btn5" onclick="recordClick(this)">Button 5</button>
+        <div class="row">
+            <div class="col-12 col-md-3 d-grid gap-2" style="max-height: 130px; margin-top: 20px;">
+                <button type="button" class="btn btn-primary btn-block" onclick="showInterface('interface1')"
+                    style="background-color: lightseagreen;">阅读足迹</button>
+                <button type="button" class="btn btn-primary btn-block" onclick="showInterface('interface2')"
+                    style="background-color: lightseagreen;">反馈</button>
+                <button type="button" class="btn btn-primary btn-block" onclick="showInterface('interface3')"
+                    style="background-color: lightseagreen;">设置</button>
+            </div>
+            <!-- 阅读足迹 -->
+            <div id="interface1" class="col-12 col-md-9 interface" style="display:none; background-color: aliceblue;">
+                <div class="border p-3 mt-3" style="background-color: white;">
+                    <h5 style="text-align: center;">阅读足迹</h5>
+                    <div class="container">
+                        <div class="row d-grid gap-2">
+                            <button id="btn1" class="btn btn-outline-secondary btn-block" onclick="recordClick(this)">Button 1</button>
+                            <button id="btn2" class="btn btn-outline-secondary btn-block" onclick="recordClick(this)">Button 2</button>
+                            <button id="btn3" class="btn btn-outline-secondary btn-block" onclick="recordClick(this)">Button 3</button>
+                            <button id="btn4" class="btn btn-outline-secondary btn-block" onclick="recordClick(this)">Button 4</button>
+                            <button id="btn5" class="btn btn-outline-secondary btn-block" onclick="recordClick(this)">Button 5</button>
 
-                        <!-- ... 添加更多的按钮 -->
-                    </div>
-                    <div class="row">
-                        <div id="images"></div>
+                            <!-- ... 添加更多的按钮 -->
+                        </div>
+                        <div class="row">
+                            <div id="images"></div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!--  反馈-->
-        <div id="interface2" class="interface" style="display:none; background-color: aliceblue;">
-            <div class="border p-3 mt-3" style="background-color: white;">
-                <h5 style="text-align: center;">反馈</h5>
-                <textarea name="" id="myTextarea" style="width: 100%; height: 100px;"></textarea>
-                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" onclick="toAlert()">提交</button>
-                <p></p>
+            <!--  反馈-->
+            <div id="interface2" class="col-12 col-md-9 interface" style="display:none; background-color: aliceblue;">
+                <div class="border p-3 mt-3" style="background-color: white;">
+                    <h5 style="text-align: center;">反馈</h5>
+                    <textarea name="" id="myTextarea" style="width: 100%; height: 100px;"></textarea>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal" onclick="toAlert()">提交</button>
+                    <p></p>
+                </div>
             </div>
-        </div>
 
-        <!--  设置-->
-        <div id="interface3" class="interface" style="display:none; background-color: aliceblue;">
-            <div class="border" style="background-color: white;">
-                <h5 style="text-align: center;">设置</h5>
-                <form>
-                    <div class="mb-3">
-                        <input type="text" class="form-control" id="username" placeholder="请输入你的用户名">
-                        <button type="button" class="btn btn-outline-secondary"
-                            onclick="changeUsername()">修改用户名</button>
+            <!--  设置-->
+
+
+            <div id="interface3" class="col-12 col-md-9 interface" style="display:none; background-color: aliceblue;">
+                <div class="border" style="background-color: white;">
+                    <h5 style="text-align: center;">设置</h5>
+                    <div class="row d-grid gap-2">
+                        <form>
+                            <div class="col-12 mb-3">
+                                <input type="text" class="col-12 col-md-9 form-control" id="username" placeholder="请输入你的用户名">
+                                <button type="button" class="btn btn-outline-secondary"
+                                    onclick="changeUsername()">修改用户名</button>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <input type="text" class="col-12 col-md-9 form-control" id="usersex" placeholder="请输入你的性别">
+                                <button type="button" class="btn btn-outline-secondary"
+                                    onclick="changeUsersex()">修改性别</button>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <input type="text" class="col-12 col-md-9 form-control" id="userage" placeholder="请输入你的年龄">
+                                <button type="button" class="btn btn-outline-secondary"
+                                    onclick="changeUserage()">修改年龄</button>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <input type="text" class="col-12 col-md-9 form-control" id="usernumber" placeholder="请输入你的手机号码">
+                                <button type="button" class="btn btn-outline-secondary"
+                                    onclick="changeUsernumber()">修改手机号码</button>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <input type="text" class="col-12 col-md-9 form-control" id="useremail" placeholder="请输入你的邮箱">
+                                <button type="button" class="btn btn-outline-secondary"
+                                    onclick="changeUseremail()">修改邮箱</button>
+                            </div>
+                        </form>
                     </div>
-                    <div class="mb-3">
-                        <input type="text" class="form-control" id="usersex" placeholder="请输入你的性别">
-                        <button type="button" class="btn btn-outline-secondary" onclick="changeUsersex()">修改性别</button>
-                    </div>
-                    <div class="mb-3">
-                        <input type="text" class="form-control" id="userage" placeholder="请输入你的年龄">
-                        <button type="button" class="btn btn-outline-secondary" onclick="changeUserage()">修改年龄</button>
-                    </div>
-                    <div class="mb-3">
-                        <input type="text" class="form-control" id="usernumber" placeholder="请输入你的手机号码">
-                        <button type="button" class="btn btn-outline-secondary"
-                            onclick="changeUsernumber()">修改手机号码</button>
-                    </div>
-                    <div class="mb-3">
-                        <input type="text" class="form-control" id="useremail" placeholder="请输入你的邮箱">
-                        <button type="button" class="btn btn-outline-secondary"
-                            onclick="changeUseremail()">修改邮箱</button>
-                    </div>
-                </form>
+                </div>
             </div>
+            <br>
         </div>
-        <br>
     </div>
 
     <!-- 解决页脚遮盖问题 -->
