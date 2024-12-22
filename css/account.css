@@ -1895,6 +1895,7 @@ input.input-material.is-invalid ~ label {
   position: relative;
 }
 
+/* 原来使用伪元素的方式添加背景（怎么搞出来的模糊效果） */
 .login-page::before {
   content: '';
   width: 100%;
@@ -1902,7 +1903,9 @@ input.input-material.is-invalid ~ label {
   display: block;
   z-index: -1;
   background: url(/account/img/background.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;  
   -webkit-filter: blur(10px);
   filter: blur(10px);
   z-index: 1;
@@ -1911,10 +1914,18 @@ input.input-material.is-invalid ~ label {
   right: 0;
 }
 
+/* body{
+  background: url(/account/img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;  
+} */
+
+
 .login-page .container {
   min-height: 100vh;
   z-index: 999;
-  padding: 20px;
+  padding: 0px;
   position: relative;
 }
 
