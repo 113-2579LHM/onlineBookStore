@@ -470,9 +470,9 @@ nav.side-navbar ul {
   padding: 15px 0;
 }
 
-nav.side-navbar ul li {
-  /* submenu item active */
-}
+/* nav.side-navbar ul li {
+  /* submenu item active *\/
+} */
 
 nav.side-navbar ul li a {
   padding: 10px 15px;
@@ -883,9 +883,9 @@ nav.navbar .dropdown-menu h3 {
 
 /* MAIN NAVBAR MEDIAQUERIES ----------------------------------- */
 @media (max-width: 1199px) {
-  nav.navbar {
-    /*==== Toggle Sidebar Btn ====*/
-  }
+  /* nav.navbar {
+    /*==== Toggle Sidebar Btn ====*\/
+  } */
   nav.navbar .menu-btn {
     margin-right: 20px;
     font-size: 1.2em;
