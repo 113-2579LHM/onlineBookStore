@@ -1902,7 +1902,7 @@ input.input-material.is-invalid ~ label {
   height: 100%;
   display: block;
   z-index: -1;
-  background: url(/account/img/background.jpg);
+  background: url(/login/img/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;  
@@ -1915,7 +1915,7 @@ input.input-material.is-invalid ~ label {
 }
 
 /* body{
-  background: url(/account/img/background.jpg);
+  background: url(/login/img/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;  

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="robots" content="all,follow">
+  <title>在线书店 - 登录</title>
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/4.2.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/login.css" id="theme-stylesheet">
+
+
+  <!-- JavaScript -->
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+
+  <!--表单验证-->
+  <script src="/vendor/jquery-validation/jquery.validate.min.js"></script>
+
+  <!-- js 文件 -->
+  <script src="/js/login.js"></script>
+
+  <style>
+    .btn-primary {
+      background-color: lightseagreen;
+      --bs-btn-border-color: lightseagreen;
+
+      --bs-btn-hover-color: rgb(255, 255, 255);
+      --bs-btn-hover-bg: rgb(38, 216, 207);
+      --bs-btn-hover-border-color: lightseagreen;
+
+      --bs-btn-active-color: #fff;
+      --bs-btn-active-bg: rgb(25, 141, 135);
+      --bs-btn-active-border-color: lightseagreen;
+    }
+
+    .underline-on-active {
+      background-color: rgb(40, 241, 231);
+      --bs-btn-color: rgb(255, 255, 255);
+      --bs-btn-border-color: rgb(40, 241, 231);
+
+      --bs-btn-hover-color: white;
+      --bs-btn-hover-bg: rgb(40, 241, 231);
+      --bs-btn-hover-border-color: rgb(40, 241, 231);
+      font-weight: 900;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page login-page">
+    <div class="container d-flex align-items-center">
+      <div class="form-holder has-shadow">
+        <div class="row">
+          <!-- Logo & 信息面板-->
+          <div class="col-12 col-md-6">
+            <div class="info d-flex align-items-center">
+              <div class="content">
+                <div class="logo">
+                  <h1>欢迎登录</h1>
+                </div>
+                <p>在线书店</p>
+              </div>
+            </div>
+          </div>
+          <!-- 账号密码面板 -->
+          <div class="col-md-6 bg-white">
+            <div class="form d-flex align-items-center">
+              <div class="content d-grid">
+                <form method="get" action='' class="form-validate" id="loginFrom">
+                  <div class="form-group">
+                    <input id="login-username" type="text" name="userName" required data-msg="请输入用户名" placeholder="用户名"
+                      class="input-material">
+                  </div>
+
+                  <div class="form-group">
+                    <input id="login-password" type="password" name="passWord" required data-msg="请输入密码"
+                      placeholder="密码" class="input-material">
+                  </div>
+
+                  <button id="login" type="submit" class="btn btn-primary btn-block">登录</button>
+
+                  <div>
+                      <!-- <input type="checkbox"  id="check1"/>&nbsp;<span>记住密码</span>
+                        <input type="checkbox" id="check2"/>&nbsp;<span>自动登录</span> -->
+
+                    <small>没有账号?</small><a href="register.html" class="signup">&nbsp;注册</a>
+
+                      <!-- <div class="custom-control custom-checkbox " style="float: right;">
+                        <input type="checkbox" class="custom-control-input" id="check2">
+                        <label class="custom-control-label" for="check2">自动登录</label>
+                      </div>
+
+                      <div class="custom-control custom-checkbox " style="float: right;">
+                        <input type="checkbox" class="custom-control-input" id="check1">
+                        <label class="custom-control-label" for="check1">记住密码&nbsp;</label>
+                      </div> -->
+                  </div>
+
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
