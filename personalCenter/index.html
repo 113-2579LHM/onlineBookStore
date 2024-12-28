@@ -4,13 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/navigation/img/user_default.png"/>
+    <link rel="shortcut icon" href="/navigation/img/user_default.png" />
 
     <title>个人中心 - 在线书店</title>
 
     <!-- bootstrap -->
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
-
     <link rel="stylesheet" href="/css/navigation.css">
     <link rel="stylesheet" href="/css/footer.css">
 
@@ -65,11 +64,48 @@
             background-color: rgb(40, 241, 231);
             --bs-btn-color: rgb(255, 255, 255);
             --bs-btn-border-color: rgb(40, 241, 231);
-            
+
             --bs-btn-hover-color: white;
             --bs-btn-hover-bg: rgb(40, 241, 231);
             --bs-btn-hover-border-color: rgb(40, 241, 231);
             font-weight: 900;
+        }
+
+        /* 购买记录卡片 */
+        .product-card {
+            max-width: 12em;
+            background-color: #fff;
+            padding: 1em;
+            box-shadow: 0 5px 5px #e1e1e1;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .product-card img {
+            max-width: 100%;
+        }
+
+        .product-card h4 {
+            font-size: 1.3em;
+            margin: 0.5em 0;
+            font-weight: bold;
+        }
+
+        .product-card div {
+            font-size: 1.2em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .product-card:hover {
+            background-color: lightslategray;
+            color: #fff;
+        }
+
+        @media screen and (max-width: 576px) {
+            .product-card {
+                font-size: 0.9em;
+            }
         }
     </style>
 
@@ -149,16 +185,12 @@
             </div>
             <div class="col-12 col-md-9">
                 <ul class="list-unstyled">
-                    <li><b>用户名：</b><span id="userDisplayname"></span></li>
-                    <li><b>性别：</b><span id="userDisplaysex"></span></li>
-                    <li><b>年龄：</b><span id="userDisplayage"></span></li>
-                    <li><b>手机号码：</b><span id="userDisplaynumber"></span></li>
-                    <li><b>邮箱：</b><span id="userDisplayadd"></span></li>
+                    <li><b>用户名：宇宙无敌霸王龙</b><span id="userDisplayname"></span></li>
+                    <li><b>邮箱：21607@qq.com</b><span id="userDisplayadd"></span></li>
                 </ul>
             </div>
         </div>
     </div>
-
 
     <br>
     <div class="container" style="background-color: white;">
@@ -167,7 +199,7 @@
                 <div class="row gap-2">
                     <div class="col col-md-12 d-grid">
                         <button type="button" class="btn btn-primary btn-block"
-                            onclick="showInterface('interface1')">阅读足迹</button>
+                            onclick="showInterface('interface1')">购买记录</button>
                     </div>
                     <div class="col col-md-12 d-grid">
                         <button type="button" class="btn btn-primary btn-block"
@@ -179,33 +211,71 @@
                     </div>
                 </div>
             </div>
-            <!-- 阅读足迹 -->
+            <!-- 购买记录 -->
             <div id="interface1" class="col-12 col-md-9 interface" style="display:none; background-color: aliceblue;">
                 <div class="border p-3 mt-3" style="background-color: white;">
-                    <h5 style="text-align: center;">阅读足迹</h5>
-                    <div class="container">
-                        <div class="row d-grid gap-2">
-                            <button id="btn1" class="btn btn-outline-secondary btn-block"
-                                onclick="recordClick(this)">Button 1</button>
-                            <button id="btn2" class="btn btn-outline-secondary btn-block"
-                                onclick="recordClick(this)">Button 2</button>
-                            <button id="btn3" class="btn btn-outline-secondary btn-block"
-                                onclick="recordClick(this)">Button 3</button>
-                            <button id="btn4" class="btn btn-outline-secondary btn-block"
-                                onclick="recordClick(this)">Button 4</button>
-                            <button id="btn5" class="btn btn-outline-secondary btn-block"
-                                onclick="recordClick(this)">Button 5</button>
-
-                            <!-- ... 添加更多的按钮 -->
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-4">
+                            <div class="product-card">
+                                <img src="/img/轮播图1.jpg" alt="">
+                                <h4>Product Name</h4>
+                                <div>
+                                    <span>$299</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="row">
-                            <div id="imgs"></div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-4">
+                            <div class="product-card">
+                                <img src="/img/轮播图1.jpg" alt="">
+                                <h4>Product Name</h4>
+                                <div>
+                                    <span>$299</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-4">
+                            <div class="product-card">
+                                <img src="/img/轮播图1.jpg" alt="">
+                                <h4>Product Name</h4>
+                                <div>
+                                    <span>$299</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-4">
+                            <div class="product-card">
+                                <img src="/img/轮播图1.jpg" alt="">
+                                <h4>Product Name</h4>
+                                <div>
+                                    <span>$299</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-4">
+                            <div class="product-card">
+                                <img src="/img/轮播图1.jpg" alt="">
+                                <h4>Product Name</h4>
+                                <div>
+                                    <span>$299</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-4">
+                            <div class="product-card">
+                                <img src="/img/轮播图1.jpg" alt="">
+                                <h4>Product Name</h4>
+                                <div>
+                                    <span>$299</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <!-- ... 添加更多的按钮 -->
                 </div>
             </div>
 
-            <!--  反馈-->
+
+            <!-- 反馈-->
             <div id="interface2" class="col-12 col-md-9 interface" style="display:none; background-color: aliceblue;">
                 <div class="border p-3 mt-3" style="background-color: white;">
                     <h5 style="text-align: center;">反馈</h5>
@@ -215,49 +285,32 @@
                 </div>
             </div>
 
-            <!--  设置-->
+            <!-- 设置-->
             <div id="interface3" class="col-12 col-md-9 interface" style="display:none; background-color: aliceblue;">
-                <div class="border" style="background-color: white;">
-                    <h5 style="text-align: center;">设置</h5>
-                    <div class="row d-grid gap-2">
-                        <form>
-                            <div class="col-12 mb-3">
-                                <input type="text" class="col-12 col-md-9 form-control" id="username"
-                                    placeholder="请输入你的用户名">
-                                <button type="button" class="btn btn-outline-secondary"
-                                    onclick="changeUsername()">修改用户名</button>
-                            </div>
-                            <div class="col-12 mb-3">
-                                <input type="text" class="col-12 col-md-9 form-control" id="usersex"
-                                    placeholder="请输入你的性别">
-                                <button type="button" class="btn btn-outline-secondary"
-                                    onclick="changeUsersex()">修改性别</button>
-                            </div>
-                            <div class="col-12 mb-3">
-                                <input type="text" class="col-12 col-md-9 form-control" id="userage"
-                                    placeholder="请输入你的年龄">
-                                <button type="button" class="btn btn-outline-secondary"
-                                    onclick="changeUserage()">修改年龄</button>
-                            </div>
-                            <div class="col-12 mb-3">
-                                <input type="text" class="col-12 col-md-9 form-control" id="usernumber"
-                                    placeholder="请输入你的手机号码">
-                                <button type="button" class="btn btn-outline-secondary"
-                                    onclick="changeUsernumber()">修改手机号码</button>
-                            </div>
-                            <div class="col-12 mb-3">
-                                <input type="text" class="col-12 col-md-9 form-control" id="useremail"
-                                    placeholder="请输入你的邮箱">
-                                <button type="button" class="btn btn-outline-secondary"
-                                    onclick="changeUseremail()">修改邮箱</button>
-                            </div>
-                        </form>
-                    </div>
+                <div class="border p-3 mt-3" style="background-color: white;">
+                    <form>
+                        <div class="mb-3 mt-3">
+                            <input type="text" class="form-control" id="name" placeholder="昵称">
+                        </div>
+                        <div class="mb-3 mt-3">
+                            <input type="text" class="form-control" id="sex" placeholder="性别">
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" class="form-control" id="pwd" placeholder="密码" name="pswd">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="Email" placeholder="邮箱">
+                        </div>
+                        <button type="submit" class="btn btn-primary">确定</button>
+                    </form>
                 </div>
             </div>
-            <br>
         </div>
+
     </div>
+
+    <br>
+
 
     <!-- 解决页脚遮盖问题 -->
     <div style="height: 100px;"></div>
@@ -340,7 +393,7 @@
         }
     </script>
     <script>
-        // 阅读足迹
+        // 购买记录
         let clickOrder = []; // 存储按钮点击顺序的数组
         let buttonsData = {
             'btn1': {
