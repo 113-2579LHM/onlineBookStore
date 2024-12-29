@@ -89,11 +89,9 @@ function checkLoginStatus() {
     const currentUser = localStorage.getItem("currentUser");
 
     if (isLoggedIn === "true" && currentUser) {
-        // 已登录
         alert(`欢迎回来, ${currentUser}!`);
         location = "/";
     } else {
-        // 未登录
         console.log("未登录");
     }
 }
