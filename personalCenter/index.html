@@ -134,8 +134,8 @@
             </div>
             <div class="col-12 col-md-9">
                 <ul class="list-unstyled">
-                    <li><b>用户名：宇宙无敌霸王龙</b><span id="userDisplayname"></span></li>
-                    <li><b>邮箱：21607@qq.com</b><span id="userDisplayadd"></span></li>
+                    <li><b>用户名：</b><span id="userDisplayname">不是哥们，不登陆谁知道你谁阿</span></li>
+                    <li><b>邮箱：</b><span id="userDisplayadd"></span>114514@1919810.com</li>
                 </ul>
             </div>
         </div>
@@ -261,6 +261,7 @@
     <!-- js区 后续移动到独立文件 -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
+            showUserInfo();
             showInterface('interface1');
         });
 
@@ -278,6 +279,13 @@
             var activeButton = document.querySelector('.btn[onclick*="' + interfaceId + '"]');
             if (activeButton) {
                 activeButton.classList.add('underline-on-active');
+            }
+        }
+        
+        function showUserInfo() {
+            // 获取用户信息
+            if(localStorage.getItem("isLoggedIn")) {
+                document.getElementById('userDisplayname').innerHTML = localStorage.getItem('currentUser');
             }
         }
     </script>

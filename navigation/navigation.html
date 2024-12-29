@@ -6,11 +6,10 @@
                 style="background: linear-gradient(to right, lightseagreen, #06c3e9);">
 
                 <a href="/" class="navbar-brand">
-                    <img src="/navigation/img/sign.png" alt="在线书店" style="width: 80px;">
+                    <img src="/navigation/img/sign.png" alt="在线书店" style="width: 80px;" title="在线书店">
                 </a>
 
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                    <!-- <ul class="navbar-nav ms-auto"> -->
                     <ul class="navbar-nav me-auto justify-content-center">
                         <li class="nav-item">
                             <a href="/" class="nav-link active" style="color: white;">
@@ -34,34 +33,42 @@
                         </li>
                     </ul>
 
-                    <a href="/personalCenter" class="navbar-brand">
-                        <img src="/navigation/img/user_default.png" alt="个人中心" style="width: 50px;">
+                    <a href="/login" class="navbar-brand" id="user-icon-href">
+                        <img src="/img/个人.png" alt="个人中心" style="width: 50px;" title="个人中心" id="user-icon">
                     </a>
+
+                    <h6 class="text-white" id="user-name" style="padding-top:10px; padding-right: 30px;">未登录</h6>
+
                     <!-- <a class="navbar-brand" id="cart-icon">
                         <img src="/navigation/img/购物车.png" alt="购物车" style="width: 40px; height: 40px; margin:5px">
-                    </a>
- -->
+                    </a> -->
                     <!-- <a href="/shoppingCart/shoppingCart.html" class="navbar-brand">
                     <img src="/navigation/img/shoppingCart.png" alt="购物车" style="width: 40px;">
                     </a> -->
                     <!-- <i class="bi bi-bag" id="cart-icon"> <img src="/navigation/img/购物车.png" alt="购物车"
                             style="width: 40px; height: 40px; margin:5px">
                     </i> -->
+
+                    <a href="/login/" id="login-btn-a"> 
+                        <button class="btn btn-outline-light" type="button" id="login-btn"
+                            style="width: 100px; margin-right: 10px;">登录</button>
+                    </a>
                 </div>
 
-                <form class="d-flex" style="height: 40px;">
+                <!-- <form class="d-flex" style="height: 40px;">
                     <input class="form-control me-2" type="text" placeholder="" aria-label="Search">
                     <button class="btn btn-outline-light" type="submit"
                         style="width: 80px; margin-right: 10px;">搜索</button>
-                </form>
+                </form> -->
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
             </nav>
-            </div>
         </div>
+    </div>
     </div>
     </div>
 </header>
