@@ -13,6 +13,15 @@
     <link rel="stylesheet" href="/css/navigation.css">
     <link rel="stylesheet" href="/css/footer.css">
 
+    <!-- bootstrap JS -->
+    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Jquery -->
+    <script src="/bootstrap/js/jquery-3.7.1.min.js"></script>
+
+    <script src="/js/main.js"></script>
+
     <style>
         .section-padding {
             padding-top: 100px;
@@ -112,62 +121,6 @@
 </head>
 
 <body style="background-color: aliceblue;">
-    <!-- 导航栏 -->
-    <div class="container col-12">
-        <div class="row">
-            <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top"
-                style="background: linear-gradient(to right, lightseagreen, #06c3e9);">
-
-                <a href="#" class="navbar-brand">
-                    <img src="/navigation/img/sign.png" alt="在线书店" style="width: 80px;">
-                </a>
-
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                    <!-- <ul class="navbar-nav ms-auto"> -->
-                    <ul class="navbar-nav me-auto justify-content-center">
-                        <li class="nav-item">
-                            <a href="/" class="nav-link active" style="color: white;">
-                                <h6>主页</h6>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/classes/" class="nav-link" style="color: white;">
-                                <h6>分类</h6>
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a href="/favourite/" class="nav-link" style="color: white;">
-                                <h6>我的书架</h6>
-                            </a>
-                        </li>
-                    </ul>
-
-                    <a href="/personalCenter" class="navbar-brand">
-                        <img src="/navigation/img/user_default.png" alt="个人中心" style="width: 50px;">
-                    </a>
-                    <a href="/shoppingCart/shoppingCart.html" class="navbar-brand">
-                        <img src="/navigation/img/shoppingCart.png" alt="购物车" style="width: 40px;">
-                    </a>
-                </div>
-
-                <form class="d-flex" style="height: 40px;">
-                    <input class="form-control me-2" type="text" placeholder="" aria-label="Search">
-                    <button class="btn btn-outline-light" type="submit"
-                        style="width: 80px; margin-right: 10px">搜索</button>
-                </form>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </nav>
-        </div>
-    </div>
-
-    <!-- 用来解决导航栏遮盖元素的问题 -->
-    <div style="height: 74px;"></div>
-
     <div class="container-fluid" style="padding:0px">
         <div class="headArea"></div>
     </div>
@@ -305,66 +258,6 @@
 
     </div>
 
-    <br>
-
-
-    <!-- 解决页脚遮盖问题 -->
-    <div style="height: 100px;"></div>
-
-    <!-- 页脚 -->
-    <footer class="bg-dark">
-        <div class="container">
-            <div class="footer-top">
-                <div class="row gy-5">
-                    <div class="col-lg-3 col-sm-6">
-                        <a href="#"><img src="/navigation/img/sign.png" alt="" style="width: 100px;"></a>
-                        <p style="color: white;">在线书店</p>
-                    </div>
-
-                    <div class="col-lg-3 col-sm-6">
-                        <h5 class="mb-0 text-white">SERVICES</h5>
-                        <div class="line"></div>
-                        <ul style="color: white;">
-                            <li>UI Design</a></li>
-                            <li>UX Design</a></li>
-                            <li>Branding</a></li>
-                            <li>Logo Designing</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-3 col-sm-6">
-                        <h5 class="mb-0 text-white">ABOUT</h5>
-                        <div class="line"></div>
-                        <ul style="color: white;">
-                            <li>Blog</a></li>
-                            <li>Services</a></li>
-                            <li>Company</a></li>
-                            <li>Career</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-3 col-sm-6">
-                        <h5 class="mb-0 text-white">CONTACT</h5>
-                        <div class="line"></div>
-                        <ul style="color: white;">
-                            <li>GUET 北海</li>
-                            <li>10086666</li>
-                            <li>www.example.com</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <div class="row g-4 justify-content-between">
-                    <div class="col-auto">
-                        <p class="mb-0" style="color: white;">© 汤臣六品豪华607</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
     <!-- js区 后续移动到独立文件 -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -474,8 +367,10 @@
     <script>
         //感谢反馈
         function toAlert() {
-            document.getElementById('myTextarea').value = '';
+            let text = document.getElementById('myTextarea').value;
+            localStorage.setItem('feedback', text);
             alert("感觉您的提交");
+            document.getElementById('myTextarea').value = '';
         }
     </script>
     <script>
@@ -515,13 +410,6 @@
             alert("修改成功");
         }
     </script>
-
-    <!-- bootstrap JS -->
-    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Jquery -->
-    <script src="/bootstrap/js/jquery-3.7.1.min.js"></script>
 
 </body>
 
