@@ -14,8 +14,60 @@
     <div style="height: 74px;"></div>
     <header>
         <div class="nav container">
-            <a href="#" class="logo">在线书店</a>
-            <i class="bi bi-bag" id="cart-icon"></i>
+                <div class="row">
+                    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top"
+                        style="background: linear-gradient(to right, lightseagreen, #06c3e9);">
+        
+                        <a href="#" class="navbar-brand">
+                            <img src="/navigation/img/sign.png" alt="在线书店" style="width: 80px;">
+                        </a>
+        
+                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <!-- <ul class="navbar-nav ms-auto"> -->
+                            <ul class="navbar-nav me-auto justify-content-center">
+                                <li class="nav-item">
+                                    <a href="/" class="nav-link active" style="color: white;">
+                                        <h6>主页</h6>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/classes/" class="nav-link" style="color: white;">
+                                        <h6>分类</h6>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/" class="nav-link" style="color: white;">
+                                        <h6>书店</h6>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/favourite/" class="nav-link" style="color: white;">
+                                        <h6>我的书架</h6>
+                                    </a>
+                                </li>
+                            </ul>
+                            <a href="/personalCenter" class="navbar-brand">
+                                <img src="/navigation/img/user_default.png" alt="个人中心"
+                                    style="width: 50px;">
+                            </a>
+                            <i class="bi bi-bag" id="cart-icon"></i>
+                        </div>
+        
+                        <form class="d-flex" style="height: 40px;">
+                            <input class="form-control me-2" type="text" placeholder="" aria-label="Search">
+                            <button class="btn btn-outline-light" type="submit"
+                                style="width: 80px;margin-right: 10px;">搜索</button>
+                        </form>
+        
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+        
+                    </nav>
+                </div>
+        
+            
             <div class="cart">
                 <h2 class="cart-title">Your Cart</h2>
                 <div class="cart-content">
@@ -162,7 +214,6 @@
         </div>
     </div>
 </footer>
-
     <script src="shopping cart.js"></script>
 </body>
 
